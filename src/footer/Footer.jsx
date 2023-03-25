@@ -1,17 +1,17 @@
 import React from "react";
 import "./Footer.css";
 
-const footer = () => {
+const footer = (props) => {
   return (
     <>
       <div className="footer_container">
         <div className="footer_left">
           <ul>
-            <li>Prompt Generator</li>
-            <li>Dweep Daily</li>
-            <li>All Contributors</li>
-            <li>Your data on Dweep.io</li>
-            <li>Contribute to Dweep</li>
+            <li>{props.link1}</li>
+            <li>{props.link2}</li>
+            <li>{props.link3}</li>
+            <li>{props.link4}</li>
+            <li>{props.link5}</li>
           </ul>
         </div>
         <div className="footer_right">

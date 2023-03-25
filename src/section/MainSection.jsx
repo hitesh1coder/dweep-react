@@ -1,13 +1,13 @@
 import React from "react";
 import "./MainSection.css";
 
-const mainSection = () => {
+const mainSection = (props) => {
   return (
     <>
       <div className="main_container">
         <div className="left_container">
           <div className="detail_section">
-            <h1>An inspiring design delivered to your inbox every morning</h1>
+            <h1>{props.heading}</h1>
             <p className="description">
               Our team scouts the internet for the best designs, illustrations
               and art and delivers a truly inspiring one every day to your inbox
