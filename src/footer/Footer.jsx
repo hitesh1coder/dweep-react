@@ -2,16 +2,21 @@ import React from "react";
 import "./Footer.css";
 
 const footer = (props) => {
+  let links = [
+    "Prompt Generator",
+    "Dweep Daily",
+    "All Contributors",
+    "Your data on Dweep.io",
+    "Contribute to Dweep",
+  ];
   return (
     <>
       <div className="footer_container">
         <div className="footer_left">
           <ul>
-            <li>{props.link1}</li>
-            <li>{props.link2}</li>
-            <li>{props.link3}</li>
-            <li>{props.link4}</li>
-            <li>{props.link5}</li>
+            {links.map((link) => {
+              return <li>{link}</li>;
+            })}
           </ul>
         </div>
         <div className="footer_right">
